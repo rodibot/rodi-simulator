@@ -48,6 +48,12 @@ class See:
         return '0'
 
 
+class Move:
+    def GET(self, param1, param2):
+        """ Move servors """
+        print 'TODO: Move the actual servos'
+
+
 class Sing:
     def GET(self, note, duration):
         """ Play a tone LED """
