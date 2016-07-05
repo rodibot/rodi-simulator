@@ -16,7 +16,7 @@ urls = (
     '/1/(\d+)', 'Blink',
     '/2', 'Sense',
     '/2/', 'Sense',
-    '/3/(\d+)/(\d+)', 'Move',
+    '/3/-?(\d+)/-?(\d+)', 'Move',
     '/4/(\d+)/(\d+)', 'Sing',
     '/5', 'See',
     '/5/', 'See',
@@ -46,6 +46,12 @@ class See:
         """ Read ultrasonic sensor"""
         print 'TODO: Return actual value'
         return '0'
+
+
+class Move:
+    def GET(self, param1, param2):
+        """ Move servors """
+        print 'TODO: Move the actual servos'
 
 
 class Sing:
